@@ -1,0 +1,1052 @@
+	btn1 = (Button)view.findViewById(buttonId[0]); //각 버튼 내에 view객체를 활성화
+        btn2 = (Button)view.findViewById(buttonId[1]); //각 버튼 내에 view객체를 활성화
+        btn3 = (Button)view.findViewById(buttonId[2]); //각 버튼 내에 view객체를 활성화
+        btn4 = (Button)view.findViewById(buttonId[3]); //각 버튼 내에 view객체를 활성화
+        btn5 = (Button)view.findViewById(buttonId[4]); //각 버튼 내에 view객체를 활성화
+        btn6 = (Button)view.findViewById(buttonId[5]); //각 버튼 내에 view객체를 활성화
+        btn7 = (Button)view.findViewById(buttonId[6]); //각 버튼 내에 view객체를 활성화
+        btn8 = (Button)view.findViewById(buttonId[7]); //각 버튼 내에 view객체를 활성화
+        btn9 = (Button)view.findViewById(buttonId[8]); //각 버튼 내에 view객체를 활성화
+        btn10 = (Button)view.findViewById(buttonId[9]); //각 버튼 내에 view객체를 활성화
+        btn11 = (Button)view.findViewById(buttonId[10]); //각 버튼 내에 view객체를 활성화
+        btn12 = (Button)view.findViewById(buttonId[11]); //각 버튼 내에 view객체를 활성화
+        btn13 = (Button)view.findViewById(buttonId[12]); //각 버튼 내에 view객체를 활성화
+        btn14 = (Button)view.findViewById(buttonId[13]); //각 버튼 내에 view객체를 활성화
+        btn15 = (Button)view.findViewById(buttonId[14]); //각 버튼 내에 view객체를 활성화
+        btn16 = (Button)view.findViewById(buttonId[15]); //각 버튼 내에 view객체를 활성화
+        btn17 = (Button)view.findViewById(buttonId[16]); //각 버튼 내에 view객체를 활성화
+        btn18 = (Button)view.findViewById(buttonId[17]); //각 버튼 내에 view객체를 활성화
+        btn19 = (Button)view.findViewById(buttonId[18]); //각 버튼 내에 view객체를 활성화
+        btn20 = (Button)view.findViewById(buttonId[19]); //각 버튼 내에 view객체를 활성화
+        btn21 = (Button)view.findViewById(buttonId[20]); //각 버튼 내에 view객체를 활성화
+        btn22 = (Button)view.findViewById(buttonId[21]); //각 버튼 내에 view객체를 활성화
+        btn23 = (Button)view.findViewById(buttonId[22]); //각 버튼 내에 view객체를 활성화
+        btn24 = (Button)view.findViewById(buttonId[23]); //각 버튼 내에 view객체를 활성화
+        btn25 = (Button)view.findViewById(buttonId[24]); //각 버튼 내에 view객체를 활성화
+
+ btn1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+
+                    choice[0]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                    tmp = String.valueOf(inputed[0]);
+                    num = String.valueOf(1); //setText에 넣기위해 String으로 변환
+                    turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                    //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                    Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                    if (change_turn == true) {
+                        if (choice[0] > 1) {
+                            inputed[0] = 0;
+                            return;
+                        }
+
+                        turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                        printset.change(turn_num); //턴 수를 출력
+                        btn1.setText("O"); //O로 지정
+                        inputed[0] = 1; //inputed 배열에 true를 저장
+                        change_turn = false;
+
+
+                    } else if (change_turn == false) {
+                        if (choice[0] > 1) {
+                            inputed[0] = 1;
+                            return;
+                        }
+
+                        turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                        printset.change(turn_num); //턴 수를 출력
+                        btn1.setText("X"); //X로 지정
+                        inputed[0] = 0; //inputed 배열에 false를 저장
+
+                        change_turn = true;
+
+                    }
+
+                }
+            });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[1]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[1]);
+                num = String.valueOf(2); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[1] > 1) {
+                        inputed[1] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn2.setText("O"); //O로 지정
+                    inputed[1] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[1] > 1) {
+                        inputed[1] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn2.setText("X"); //X로 지정
+                    inputed[1] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[2]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[2]);
+                num = String.valueOf(3); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[2] > 1) {
+                        inputed[2] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn3.setText("O"); //O로 지정
+                    inputed[2] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[2] > 1) {
+                        inputed[2] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn3.setText("X"); //X로 지정
+                    inputed[2] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[3]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[3]);
+                num = String.valueOf(4); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[3] > 1) {
+                        inputed[3] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn4.setText("O"); //O로 지정
+                    inputed[3] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[3] > 1) {
+                        inputed[3] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn4.setText("X"); //X로 지정
+                    inputed[3] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[4]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[4]);
+                num = String.valueOf(5); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[4] > 1) {
+                        inputed[4] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn5.setText("O"); //O로 지정
+                    inputed[4] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[4] > 1) {
+                        inputed[4] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn5.setText("X"); //X로 지정
+                    inputed[4] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[5]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[5]);
+                num = String.valueOf(6); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[5] > 1) {
+                        inputed[5] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn6.setText("O"); //O로 지정
+                    inputed[5] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[5] > 1) {
+                        inputed[5] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn6.setText("X"); //X로 지정
+                    inputed[5] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[6]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[6]);
+                num = String.valueOf(7); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[6] > 1) {
+                        inputed[6] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn7.setText("O"); //O로 지정
+                    inputed[6] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[6] > 1) {
+                        inputed[6] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn7.setText("X"); //X로 지정
+                    inputed[6] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[7]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[7]);
+                num = String.valueOf(8); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[7] > 1) {
+                        inputed[7] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn8.setText("O"); //O로 지정
+                    inputed[7] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[7] > 1) {
+                        inputed[7] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn8.setText("X"); //X로 지정
+                    inputed[7] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn9.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[8]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[8]);
+                num = String.valueOf(19); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[8] > 1) {
+                        inputed[8] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn9.setText("O"); //O로 지정
+                    inputed[8] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[8] > 1) {
+                        inputed[8] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn9.setText("X"); //X로 지정
+                    inputed[8] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn10.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[9]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[9]);
+                num = String.valueOf(10); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[9] > 1) {
+                        inputed[9] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn10.setText("O"); //O로 지정
+                    inputed[9] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[9] > 1) {
+                        inputed[9] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn10.setText("X"); //X로 지정
+                    inputed[9] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn11.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[10]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[10]);
+                num = String.valueOf(11); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[10] > 1) {
+                        inputed[10] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn11.setText("O"); //O로 지정
+                    inputed[10] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[10] > 1) {
+                        inputed[10] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn11.setText("X"); //X로 지정
+                    inputed[10] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn12.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[11]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[11]);
+                num = String.valueOf(12); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[11] > 1) {
+                        inputed[11] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn12.setText("O"); //O로 지정
+                    inputed[11] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[0] > 1) {
+                        inputed[0] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn12.setText("X"); //X로 지정
+                    inputed[11] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn13.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[12]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[12]);
+                num = String.valueOf(13); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[12] > 1) {
+                        inputed[12] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn13.setText("O"); //O로 지정
+                    inputed[12] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[12] > 1) {
+                        inputed[12] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn13.setText("X"); //X로 지정
+                    inputed[12] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn14.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[13]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[13]);
+                num = String.valueOf(1); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[13] > 1) {
+                        inputed[13] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn14.setText("O"); //O로 지정
+                    inputed[13] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[13] > 1) {
+                        inputed[13] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn14.setText("X"); //X로 지정
+                    inputed[13] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn15.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[14]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[14]);
+                num = String.valueOf(15); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[14] > 1) {
+                        inputed[14] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn15.setText("O"); //O로 지정
+                    inputed[14] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[14] > 1) {
+                        inputed[14] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn15.setText("X"); //X로 지정
+                    inputed[14] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn16.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[15]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[15]);
+                num = String.valueOf(16); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[15] > 1) {
+                        inputed[15] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn16.setText("O"); //O로 지정
+                    inputed[15] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[15] > 1) {
+                        inputed[15] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn16.setText("X"); //X로 지정
+                    inputed[15] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn17.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[16]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[16]);
+                num = String.valueOf(17); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[16] > 1) {
+                        inputed[16] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn17.setText("O"); //O로 지정
+                    inputed[16] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[16] > 1) {
+                        inputed[16] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn17.setText("X"); //X로 지정
+                    inputed[16] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn18.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[17]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[17]);
+                num = String.valueOf(18); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[17] > 1) {
+                        inputed[17] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn18.setText("O"); //O로 지정
+                    inputed[17] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[17] > 1) {
+                        inputed[17] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn18.setText("X"); //X로 지정
+                    inputed[17] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn19.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[18]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[18]);
+                num = String.valueOf(19); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[18] > 1) {
+                        inputed[18] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn19.setText("O"); //O로 지정
+                    inputed[18] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[18] > 1) {
+                        inputed[18] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn19.setText("X"); //X로 지정
+                    inputed[18] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn20.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[19]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[0]);
+                num = String.valueOf(20); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[19] > 1) {
+                        inputed[19] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn20.setText("O"); //O로 지정
+                    inputed[19] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[19] > 1) {
+                        inputed[19] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn20.setText("X"); //X로 지정
+                    inputed[19] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn21.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[20]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[20]);
+                num = String.valueOf(21); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[20] > 1) {
+                        inputed[20] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn21.setText("O"); //O로 지정
+                    inputed[20] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[20] > 1) {
+                        inputed[20] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn21.setText("X"); //X로 지정
+                    inputed[20] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn22.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[21]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[21]);
+                num = String.valueOf(22); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[21] > 1) {
+                        inputed[21] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn22.setText("O"); //O로 지정
+                    inputed[21] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[21] > 1) {
+                        inputed[21] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn22.setText("X"); //X로 지정
+                    inputed[21] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn23.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[22]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[22]);
+                num = String.valueOf(23); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[22] > 1) {
+                        inputed[22] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn23.setText("O"); //O로 지정
+                    inputed[22] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[22] > 1) {
+                        inputed[22] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn23.setText("X"); //X로 지정
+                    inputed[22] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn24.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[23]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                tmp = String.valueOf(inputed[23]);
+                num = String.valueOf(24); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+                Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                if (change_turn == true) {
+                    if (choice[23] > 1) {
+                        inputed[23] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn24.setText("O"); //O로 지정
+                    inputed[23] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[23] > 1) {
+                        inputed[23] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn24.setText("X"); //X로 지정
+                    inputed[23] = 0; //inputed 배열에 false를 저장
+
+                    change_turn = true;
+
+                }
+
+            }
+        });
+
+        btn25.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+
+                choice[24]++; //이미 눌렀던 번호의 클릭횟수를 증가시킴
+                num = String.valueOf(25); //setText에 넣기위해 String으로 변환
+                turn_num = String.valueOf(turn); //setText 넣기위해 String으로 변환
+                //Toast.makeText(getActivity(), "Num "+num, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+
+                if (change_turn == true) {
+                    if (choice[24] > 1) {
+                        inputed[24] = 0;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn25.setText("O"); //O로 지정
+                    inputed[24] = 1; //inputed 배열에 true를 저장
+                    change_turn = false;
+
+
+                } else if (change_turn == false) {
+                    if (choice[24] > 1) {
+                        inputed[24] = 1;
+                        return;
+                    }
+
+                    turn_num = String.valueOf(turn++); //setText 넣기위해 String으로 변환
+                    printset.change(turn_num); //턴 수를 출력
+                    btn25.setText("X"); //X로 지정
+                    inputed[24] = 0; //inputed 배열에 false를 저장
+
+                    tmp = String.valueOf(inputed[24]);
+                    Toast.makeText(getActivity(), "Num " + tmp, Toast.LENGTH_SHORT).show(); //누른 버튼의 번호 출력
+
+                    change_turn = true;
+
+                }
+
+            }
+        });

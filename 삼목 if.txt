@@ -1,0 +1,442 @@
+ //승부가 났을 경우 어떠한 칸이 승리조건에 만족하는지 표시해준다
+                    if ((inputed[0] == 1 && inputed[1] == 1 && inputed[2] == 1) || (inputed[0] == 0 && inputed[1] == 0 && inputed[2] == 0))
+                    {
+                        name.show(fm[0], " ");
+                        btn[0].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[1].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[2].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[1] == 1 && inputed[2] == 1 && inputed[3] == 1) || (inputed[1] == 0 && inputed[2] == 0 && inputed[3] == 0))
+                    {
+                        name.show(fm[1], " ");
+                        btn[1].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[2].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[3].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[2] == 1 && inputed[3] == 1 && inputed[4] == 1) || (inputed[2] == 0 && inputed[3] == 0 && inputed[4] == 0))
+                    {
+                        name.show(fm[2], " ");
+                        btn[2].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[3].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[4].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[5] == 1 && inputed[6] == 1 && inputed[7] == 1) || (inputed[5] == 0 && inputed[6] == 0 && inputed[7] == 0))
+                    {
+                        name.show(fm[3], " ");
+                        btn[5].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+
+                    else if ((inputed[6] == 1 && inputed[7] == 1 && inputed[8] == 1) || (inputed[6] == 0 && inputed[7] == 0 && inputed[8] == 0))
+                    {
+                        name.show(fm[4], " ");
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+
+                    else if ((inputed[7] == 1 && inputed[8] == 1 && inputed[9] == 1) || (inputed[7] == 0 && inputed[8] == 0 && inputed[9] == 0))
+                    {
+                        name.show(fm[5], " ");
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[9].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+
+
+                    else if ((inputed[10] == 1 && inputed[11] == 1 && inputed[12] == 1) || (inputed[10] == 0 && inputed[11] == 0 && inputed[12] == 0))
+                    {
+                        name.show(fm[6], " ");
+                        btn[10].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[11] == 1 && inputed[12] == 1 && inputed[13] == 1) || (inputed[11] == 0 && inputed[12] == 0 && inputed[13] == 0))
+                    {
+                        name.show(fm[7], " ");
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[12] == 1 && inputed[13] == 1 && inputed[14] == 1) || (inputed[12] == 0 && inputed[13] == 0 && inputed[14] == 0))
+                    {
+                        name.show(fm[8], " ");
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[14].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[15] == 1 && inputed[16] == 1 && inputed[17] == 1) || (inputed[15] == 0 && inputed[16] == 0 && inputed[17] == 0))
+                    {
+                        name.show(fm[9], " ");
+                        btn[15].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+                    else if ((inputed[16] == 1 && inputed[17] == 1 && inputed[18] == 1) || (inputed[16] == 0 && inputed[17] == 0 && inputed[18] == 0))
+                    {
+                        name.show(fm[10], " ");
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+                    else if ((inputed[17] == 1 && inputed[18] == 1 && inputed[19] == 1) || (inputed[17] == 0 && inputed[18] == 0 && inputed[19] == 0))
+                    {
+                        name.show(fm[11], " ");
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[19].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+
+
+                    else if ((inputed[20] == 1 && inputed[21] == 1 && inputed[22] == 1) || (inputed[20] == 0 && inputed[21] == 0 && inputed[22] == 0))
+                    {
+                        name.show(fm[12], " ");
+                        btn[20].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[21].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[22].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[21] == 1 && inputed[22] == 1 && inputed[23] == 1) || (inputed[21] == 0 && inputed[22] == 0 && inputed[23] == 0))
+                    {
+                        name.show(fm[13], " ");
+                        btn[21].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[22].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[23].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[22] == 1 && inputed[23] == 1 && inputed[24] == 1) || (inputed[22] == 0 && inputed[23] == 0 && inputed[24] == 0))
+                    {
+                        name.show(fm[14], " ");
+                        btn[22].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[23].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[24].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[0] == 1 && inputed[5] == 1 && inputed[10] == 1) || (inputed[0] == 0 && inputed[5] == 0 && inputed[10] == 0))
+                    {
+                        name.show(fm[15], " ");
+                        btn[0].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[5].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[10].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+                    else if ((inputed[5] == 1 && inputed[10] == 1 && inputed[15] == 1) || (inputed[5] == 0 && inputed[10] == 0 && inputed[15] == 0))
+                    {
+                        name.show(fm[16], " ");
+                        btn[5].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[10].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[15].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+                    else if ((inputed[10] == 1 && inputed[15] == 1 && inputed[20] == 1) || (inputed[10] == 0 && inputed[15] == 0 && inputed[20] == 0))
+                    {
+                        name.show(fm[17], " ");
+                        btn[10].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[15].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[20].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+
+
+                    else if ((inputed[1] == 1 && inputed[6] == 1 && inputed[11] == 1) || (inputed[1] == 0 && inputed[6] == 0 && inputed[11] == 0))
+                    {
+                        name.show(fm[18], " ");
+                        btn[1].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+                    else if ((inputed[6] == 1 && inputed[11] == 1 && inputed[16] == 1) || (inputed[6] == 0 && inputed[11] == 0 && inputed[16] == 0))
+                    {
+                        name.show(fm[19], " ");
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+
+
+                    }
+                    else if ((inputed[11] == 1 && inputed[16] == 1 && inputed[21] == 1) || (inputed[11] == 0 && inputed[16] == 0 && inputed[21] == 0))
+                    {
+                        name.show(fm[20], " ");
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[21].setBackgroundColor(Color.parseColor("#7085ff"));
+                    }
+
+
+                    else if ((inputed[2] == 1 && inputed[7] == 1 && inputed[12] == 1) || (inputed[2] == 0 && inputed[7] == 0 && inputed[12] == 0))
+                    {
+                        name.show(fm[21], " ");
+                        btn[2].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[7] == 1 && inputed[12] == 1 && inputed[17] == 1) || (inputed[7] == 0 && inputed[12] == 0 && inputed[17] == 0))
+                    {
+                        name.show(fm[22], " ");
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[12] == 1 && inputed[17] == 1 && inputed[22] == 1) || (inputed[12] == 0 && inputed[17] == 0 && inputed[22] == 0))
+                    {
+                        name.show(fm[23], " ");
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[22].setBackgroundColor(Color.parseColor("#7085ff"));
+                    }
+
+
+                    else if ((inputed[3] == 1 && inputed[8] == 1 && inputed[13] == 1) || (inputed[3] == 0 && inputed[8] == 0 && inputed[13] == 0))
+                    {
+                        name.show(fm[24], " ");
+                        btn[3].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[8] == 1 && inputed[13] == 1 && inputed[18] == 1) || (inputed[8] == 0 && inputed[13] == 0 && inputed[18] == 0))
+                    {
+                        name.show(fm[25], " ");
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[13] == 1 && inputed[18] == 1 && inputed[23] == 1) || (inputed[13] == 0 && inputed[18] == 0 && inputed[23] == 0))
+                    {
+                        name.show(fm[26], " ");
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[23].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[4] == 1 && inputed[9] == 1 && inputed[14] == 1) || (inputed[4] == 0 && inputed[9] == 0 && inputed[14] == 0))
+                    {
+                        name.show(fm[27], " ");
+                        btn[4].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[9].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[14].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[9] == 1 && inputed[14] == 1 && inputed[19] == 1) || (inputed[9] == 0 && inputed[14] == 0 && inputed[19] == 0))
+                    {
+                        name.show(fm[28], " ");
+                        btn[9].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[14].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[19].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[14] == 1 && inputed[19] == 1 && inputed[24] == 1) || (inputed[14] == 0 && inputed[19] == 0 && inputed[24] == 0))
+                    {
+                        name.show(fm[29], " ");
+                        btn[14].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[19].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[24].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[4] == 1 && inputed[8] == 1 && inputed[12] == 1 && inputed[16] == 1 && inputed[20] == 1) || (inputed[4] == 0 && inputed[8] == 0 && inputed[12] == 0 && inputed[16] == 0 && inputed[20] == 0))
+                    {
+                        name.show(fm[49], " ");
+                        btn[0].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[24].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[4].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[20].setBackgroundColor(Color.parseColor("#7085ff"));
+                    }
+
+
+
+                    else if ((inputed[0] == 1 && inputed[6] == 1 && inputed[12] == 1) || (inputed[0] == 0 && inputed[6] == 0 && inputed[12] == 0))
+                    {
+                        name.show(fm[30], " ");
+                        btn[0].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[6] == 1 && inputed[12] == 1 && inputed[18] == 1) || (inputed[6] == 0 && inputed[12] == 0 && inputed[18] == 0))
+                    {
+                        name.show(fm[31], " ");
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[12] == 1 && inputed[18] == 1 && inputed[24] == 1) || (inputed[12] == 0 && inputed[18] == 0 && inputed[24] == 0))
+                    {
+                        name.show(fm[32], " ");
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[24].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[4] == 1 && inputed[8] == 1 && inputed[12] == 1) || (inputed[4] == 0 && inputed[8] == 0 && inputed[12] == 0))
+                    {
+                        name.show(fm[33], " ");
+                        btn[4].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[8] == 1 && inputed[12] == 1 && inputed[16] == 1) || (inputed[8] == 0 && inputed[12] == 0 && inputed[16] == 0))
+                    {
+                        name.show(fm[34], " ");
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[12] == 1 && inputed[16] == 1 && inputed[20] == 1) || (inputed[12] == 0 && inputed[16] == 0 && inputed[20] == 0))
+                    {
+                        name.show(fm[35], " ");
+                        btn[12].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[20].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+                    else if ((inputed[1] == 1 && inputed[7] == 1 && inputed[13] == 1) || (inputed[1] == 0 && inputed[7] == 0 && inputed[13] == 0))
+                    {
+                        name.show(fm[36], " ");
+                        btn[1].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[7] == 1 && inputed[13] == 1 && inputed[19] == 1) || (inputed[7] == 0 && inputed[13] == 0 && inputed[19] == 0))
+                    {
+                        name.show(fm[37], " ");
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[19].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[5] == 1 && inputed[11] == 1 && inputed[17] == 1) || (inputed[5] == 0 && inputed[11] == 0 && inputed[17] == 0))
+                    {
+                        name.show(fm[38], " ");
+                        btn[5].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[11] == 1 && inputed[17] == 1 && inputed[23] == 1) || (inputed[11] == 0 && inputed[17] == 0 && inputed[23] == 0))
+                    {
+                        name.show(fm[39], " ");
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[23].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[2] == 1 && inputed[8] == 1 && inputed[14] == 1) || (inputed[2] == 0 && inputed[8] == 0 && inputed[14] == 0))
+                    {
+                        name.show(fm[40], " ");
+                        btn[2].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[8].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[14].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[10] == 1 && inputed[16] == 1 && inputed[22] == 1) || (inputed[10] == 0 && inputed[16] == 0 && inputed[22] == 0))
+                    {
+                        name.show(fm[41], " ");
+                        btn[10].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[16].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[22].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[2] == 1 && inputed[6] == 1 && inputed[10] == 1) || (inputed[2] == 0 && inputed[6] == 0 && inputed[10] == 0))
+                    {
+                        name.show(fm[42], " ");
+                        btn[2].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[6].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[10].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[3] == 1 && inputed[7] == 1 && inputed[11] == 1) || (inputed[3] == 0 && inputed[7] == 0 && inputed[11] == 0))
+                    {
+                        name.show(fm[43], " ");
+                        btn[3].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[7] == 1 && inputed[11] == 1 && inputed[15] == 1) || (inputed[7] == 0 && inputed[11] == 0 && inputed[15] == 0))
+                    {
+                        name.show(fm[45], " ");
+                        btn[7].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[11].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[15].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+
+
+                    else if ((inputed[9] == 1 && inputed[13] == 1 && inputed[17] == 1) || (inputed[9] == 0 && inputed[13] == 0 && inputed[17] == 0))
+                    {
+                        name.show(fm[46], " ");
+                        btn[9].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[13] == 1 && inputed[17] == 1 && inputed[21] == 1) || (inputed[13] == 0 && inputed[17] == 0 && inputed[21] == 0))
+                    {
+                        name.show(fm[47], " ");
+                        btn[13].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[17].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[21].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
+                    else if ((inputed[14] == 1 && inputed[18] == 1 && inputed[22] == 1) || (inputed[14] == 0 && inputed[18] == 0 && inputed[22] == 0))
+                    {
+                        name.show(fm[48], " ");
+                        btn[14].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[18].setBackgroundColor(Color.parseColor("#7085ff"));
+                        btn[22].setBackgroundColor(Color.parseColor("#7085ff"));
+
+                    }
