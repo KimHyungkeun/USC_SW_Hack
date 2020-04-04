@@ -1,9 +1,9 @@
 import pandas as pd 
 import math
 
-f = open('../violation_location.csv','w')
+f = open('violation_location.csv','w')
 
-df = pd.read_csv('폐수 위법사항_2001-2016_0.csv', sep=',') 
+df = pd.read_csv('../폐수 위법사항_2001-2016_0.csv', sep=',') 
 column_df = df['Location 1'] 
 index = 0
 limit = len(column_df)
