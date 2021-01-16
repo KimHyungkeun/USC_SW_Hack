@@ -3,7 +3,8 @@
 - 2019 숭실대학교 SW Pioneer USC 해외연수 일일 해커톤
 
 1. 캘리포니아의 수질오염을 주제로 데이터를 모아 분석
-2. 불법 폐수처리 건수, 불법 폐수처리에 의한 범법자 수, 도시/시골에 따른 오염정도를 비교하여 수질오염과의 관련도를 나타낸다.
+2. 불법 폐수처리 건수, 불법 폐수처리에 의한 범법자 수, 도시/시골에 따른 오염정도를 비교하여 
+   수질오염과의 관련도를 나타낸다.
 
 [1. pollution_for_year.py](https://github.com/KimHyungkeun/USC_SW_Hack/blob/master/Hackathon_Sharing/%EC%83%9D%EC%84%B1%ED%95%9Ccsv/pollution_for_year.py)
 
