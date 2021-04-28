@@ -7,6 +7,7 @@
 [* Water_Pollution_in_California.pdf](https://github.com/KimHyungkeun/USC_SW_Hack/blob/master/Water_Pollution_in_California.pdf)
 : 해커톤 발표 자료
 
+![Tableau_Picture](https://github.com/KimHyungkeun/USC_SW_Hack/blob/master/Pictures/Paint_Dashboard.png)
 
 
 [1. pollution_for_year.py](https://github.com/KimHyungkeun/USC_SW_Hack/blob/master/Hackathon_Sharing/%EC%83%9D%EC%84%B1%ED%95%9Ccsv/pollution_for_year.py)
